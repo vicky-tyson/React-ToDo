@@ -1,13 +1,92 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+        background-color: #2596be;
 }
+
+.list-container{
+                 width: 100%;
+                 max-width: 600px;
+                 height: 400px;
+                 background-color: #fff;
+                 margin: 100px auto 100px;
+                 padding: 40px 30px 70px;
+                 border-radius: 9px;
+}
+
+.input-box{
+             padding: 20px;
+}
+
+.input-box input{
+                   width: 450px;
+                   height: 35px;
+                   background-color: #d3eaf2;
+                   border: none;
+                   border-bottom-left-radius: 10px;
+                   border-top-left-radius: 10px;
+                   padding-left: 20px;
+}
+
+.input-box input::placeholder{
+                                padding-left: 20px;
+                                font-family: 'Courier New', Courier, monospace;
+                                font-weight: 700;
+}
+
+.input-box input:focus{
+                         outline: none;
+}
+
+.input-box button{
+                    width: 80px;
+                    height: 35px;
+                    margin-left: 5px;
+                    border: none;
+                    background-color: orange;
+                    border-top-right-radius: 10px;
+                    border-bottom-right-radius: 10px;
+}
+
+.todo-list{
+    margin-left: 30px;
+    
+}
+
+.todo-list li{
+                list-style-type: none;
+                padding: 12px 8px 12px 5px;
+                user-select: none;
+                font-size: 18px;
+                position: relative;
+            
+}
+
+.todo-list .active{
+    text-decoration: line-through;
+}
+
+.del-btn{
+               position: absolute;
+               right: 0;
+               top: 5px;
+               width: 80px;
+               height: 40px;
+               font-size: 13px;
+               color: white;
+               line-height: 40px;
+               text-align: center;
+               border: none;
+               cursor: pointer;
+               border-radius: 30px;
+               background-color: #0b525b;
+               transition-duration: 0.5s;
+}
+
+.del-btn:hover{
+    background-color: red;
+}
+
