@@ -65,7 +65,7 @@ body{
             
 }
 
-.todo-list .active{
+.active{
     text-decoration: line-through;
 }
 
